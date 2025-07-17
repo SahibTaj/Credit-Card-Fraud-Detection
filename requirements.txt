@@ -6,3 +6,5 @@ seaborn
 xgboost
 imblearn
 joblib
+flask
+gunicorn
