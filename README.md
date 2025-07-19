@@ -42,6 +42,20 @@ Credit-Card-Fraud-Detection/
 ├── README.md # This file 😄
 └── venv/ # Virtual environment (not pushed to Git)
 
+---
+
+## 🛠️ Tech Stack
+
+| Component           | Technology               |
+|---------------------|--------------------------|
+| Language            | Python 3                 |
+| ML Library          | Scikit-Learn             |
+| Preprocessing       | Pandas, NumPy            |
+| Visualization       | Matplotlib, Seaborn      |
+| Imbalance Fix       | imbalanced-learn (SMOTE) |
+| API Framework       | Flask                    |
+| Model Serialization | joblib                   |
+| Hosting (Optional)  | Render / Localhost       |
 
 ---
 
@@ -55,7 +69,7 @@ Credit-Card-Fraud-Detection/
 
 ## 🧰 Setup Instructions
 
-### 🐍 Local Installation
+## 🐍 Local Installation
 
 > Don’t worry, this won’t take longer than a coffee break ☕
 
@@ -63,15 +77,42 @@ Credit-Card-Fraud-Detection/
 # Clone the repository
 git clone https://github.com/SahibTaj/Credit-Card-Fraud-Detection.git
 cd Credit-Card-Fraud-Detection
+```
 
-# Create a virtual environment
+## Create a virtual environment
+```bash
 python -m venv venv
+```
 
-# Activate it
-# On Windows:
+## Activate it
+### On Windows:
+```bash
 venv\Scripts\activate
-# On Mac/Linux:
+```
+### On Mac/Linux:
+```bash
 source venv/bin/activate
-
-# Install all dependencies
+```
+## Install all dependencies
+```bash
 pip install -r requirements.txt
+```
+## 🧠 Run the Flask API
+```bash
+python app.py
+```
+## 📊 Accuracy & Performance
+Best model: Random Forest Classifier
+
+Accuracy: ~99.92% on test set
+
+Recall: High recall on minority (fraud) class using SMOTE
+
+### 📉 Don’t trust accuracy blindly. It’s class imbalance — like finding a needle in a haystack!
+
+## 🧠 Fun Fact
+Fraud detection systems are basically Python-powered Sherlock Holmes:
+They solve crimes faster than human eyes — and never need tea breaks! 🍵🕵️‍♂️🐍
+
+## ✨ Star This Repo If It Helped You!
+## Because stars aren’t just for the night sky 🌌 — they help devs like me too 😄
